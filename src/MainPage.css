@@ -1,0 +1,14 @@
+button {
+  margin-top: 10px;
+  background-color: #292929;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: block; /* 블록 요소로 변경 */
+  margin-left: auto; /* 좌측 여백 자동 조절 */
+  margin-right: auto; /* 우측 여백 자동 조절 */
+}
