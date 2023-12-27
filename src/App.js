@@ -17,6 +17,18 @@ const App = () => {
     console.log("닫기 버튼 클릭: isTeamMemberOpen = ", isTeamMemberOpen);
   };
 
+  const [isWSJOpen, setIsWSJOpen] = useState(false);
+
+  const handleWSJClick = () => {
+    setIsWSJOpen(true);
+    console.log("우성종 클릭 : isWSJOpen = ", isWSJOpen);
+  };
+
+  const handleWSJCloseClick = () => {
+    setIsWSJOpen(false);
+    console.log("우성종 닫기 버튼 클릭 : isWSJOpen = ", isWSJOpen);
+  };
+
   return (
     <div>
       <br />

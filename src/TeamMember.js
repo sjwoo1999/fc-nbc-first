@@ -1,5 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
+
 import "./TeamMember.css";
+
+import WSJ from "./TM_WSJ_ESTJ";
+import WSW from "./TM_WSW_ENFP";
+import UJW from "./TM_UJW_INFJ";
+import KYW from "./TM_KYW_ESTJ";
 
 // Individual 컴포넌트 정의하기 (필요한 경우)
 const Individual = ({ name, mbti, blog, image }) => {
@@ -16,41 +22,62 @@ const Individual = ({ name, mbti, blog, image }) => {
   );
 };
 
-const TeamMember = ({ isTeamMemberOpen, handleCloseClick }) => {
-  return (
-    <div>
-      <h1>팀원 소개</h1>
-      <br />
-      <div className="individual-container">
-        <Individual
-          name="우성종"
-          mbti="ESTJ"
-          blog="https://sjwoo1999.tistory.com/"
-          image="/images/image.png"
-        />
-        <Individual
-          name="우승원"
-          mbti="ENFP"
-          blog="https://woo001234.tistory.com"
-          image="/images/image.png"
-        />
-        <Individual
-          name="엄지원"
-          mbti="INFJ"
-          blog="https://331425.tistory.com"
-          image="/images/image.png"
-        />
-        <Individual
-          name="강영우"
-          mbti="ESTJ"
-          blog="https://devkyw.tistory.com"
-          image="/images/image.png"
-        />
+class TeamMember extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isWSJOpen: false,
+    };
+    this.state = {
+      isWSWOpen: false,
+    };
+    this.state = {
+      isUJWOpen: false,
+    };
+    this.state = {
+      isKYWOpen: false,
+    };
+  }
+
+  handleWSJLinkClick = () => {
+    this.setState({
+      isWSJOpen: !this.state.isWSJOpen,
+    });
+  };
+
+  handleWSWLinkClick = () => {
+    this.setState({
+      isWSWOpen: !this.state.isWSWOpen,
+    });
+  };
+
+  handleUJWLinkClick = () => {
+    this.setState({
+      isUJWOpen: !this.state.isUJWOpen,
+    });
+  };
+
+  handleKYWLinkClick = () => {
+    this.setState({
+      isKYWOpen: !this.state.isKYWOpen,
+    });
+  };
+
+  // 세미콜론 추가 ;
+  render() {
+    return (
+      <div>
+        <button onClick={this.handleWSJLinkClick}>우성종</button>
+        {this.state.isWSJOpen ? <WSJ /> : <div></div>}
+        <button onClick={this.handleWSWLinkClick}>우승원</button>
+        {this.state.isWSWOpen ? <WSW /> : <div></div>}
+        <button onClick={this.handleUJWLinkClick}>엄지원</button>
+        {this.state.isUJWOpen ? <UJW /> : <div></div>}
+        <button onClick={this.handleKYWLinkClick}>강영우</button>
+        {this.state.isKYWOpen ? <KYW /> : <div></div>}
       </div>
-      <br />
-      <button onClick={handleCloseClick}>닫기</button>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default TeamMember;

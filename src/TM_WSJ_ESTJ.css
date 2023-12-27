@@ -24,16 +24,17 @@ button {
   border-radius: 10px;
 }
 
+/* .individual 요소의 크기를 고정 */
 .individual {
   width: 20%;
   margin-right: 5px;
   border: 1px solid #ccc;
 }
 
+/* .individual 요소를 flexbox로 배치 */
+/* individual-container를 가운데로 정렬 */
 .individual-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
 }
