@@ -6,7 +6,10 @@ class TeamMember_UJW_INFJ extends Component {
       <div className="personal-page">
         <h1>엄지원</h1>
         <div className="profile">
-          <img src="" alt="이미지" />
+          <img
+            src="https://drive.google.com/file/d/17csFeyWbTYNRAEmOOhIpqzV3UKi7aE9l/view?usp=sharing"
+            alt="이미지"
+          />
           <p>엄지원</p>
           <p>INFJ</p>
         </div>

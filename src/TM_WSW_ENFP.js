@@ -6,7 +6,7 @@ class TeamMember_WSW_ENFP extends Component {
       <div className="personal-page">
         <h1>우승원</h1>
         <div className="profile">
-          <img src="" alt="이미지" />
+          <img src="https://i.imgur.com/JAVOIgV.jpg" alt="이미지" />
           <p>우승원</p>
           <p>ENFP</p>
         </div>
