@@ -40,7 +40,9 @@ class TeamMember_UJW_INFJ extends Component {
         <div className="self-introduction">
           <button
             style={{ background: "#adb5bd" }}
-            onClick={() => window.open("UJW")}
+            onClick={() =>
+              window.open("https://harmonious-seahorse-239a20.netlify.app/")
+            }
           >
             자세히 보기
           </button>

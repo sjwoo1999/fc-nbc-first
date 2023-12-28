@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import MainPage from "./MainPage";
 import TeamMember from "./TeamMember";
-import Who_is_WSJ from "./Who_is_WSJ";
 
 import "./App.css";
 
