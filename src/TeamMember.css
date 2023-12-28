@@ -25,15 +25,19 @@ button {
 }
 
 .individual {
-  width: 20%;
-  margin-right: 5px;
+  width: 25%;
+  height: 460px;
   border: 1px solid #ccc;
+  display: block;
+  justify-content: flex-start;
+}
+
+.individual + .individual {
+  margin-left: 10px;
 }
 
 .individual-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
 }

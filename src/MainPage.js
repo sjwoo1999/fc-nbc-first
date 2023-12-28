@@ -22,7 +22,13 @@ class MainPage extends Component {
       <div>
         <h1>내배캠 Node.js 4기 2조</h1>
         <br />
-        <button onClick={this.handleTeamMemberToggle}>팀원 소개</button>
+        <button
+          style={{ background: "#DC143C" }}
+          onClick={this.handleTeamMemberToggle}
+        >
+          팀원 소개
+        </button>
+        <br />
         <br />
         {this.state.isTeamMemberOpen ? <TeamMember /> : <div></div>}
       </div>
